@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graduation Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(90deg, black, grey);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, black, grey);
+            color: #bccbd9;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.0em;
+            margin-top: 10px;
+            font-weight: 200;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            color: black;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #000000;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .sub-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #bccbd9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .sub-section:hover {
+            transform: translateY(-5px);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 8px 0;
+            font-size: 1.0em;
+            cursor: pointer;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "•";
+            color: #0e0e0f;
+            margin-right: 10px;
+        }
+
+        ul a{
+            content: "•";
+            color: #0e0e0f;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        ul a:hover {
+            text-decoration: underline;
+         }
+        footer {
+            background: linear-gradient(90deg, black, grey);
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 600px;
+        }
+
+        .footer-button {
+            background-color: #bccbd9;
+            color: rgb(12, 12, 12);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-button:hover {
+            background-color: #bccbd9;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 100;
+        }
+
+        .cta-button {
+            background-color: #bccbd9;
+            color: #0c0d0e;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 1.0em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #4c92d2;
+        }
+
+        .project-card {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e6f0ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact a:hover {
+            transform: translateY(-5px);
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Graduation Portfolio</h1>
+    <h3>Master of Science in Artificial Intelligence - Machine Learning</h3>
+    <p>University of North Texas | 2023 - 2024 | GPA: 4.0</p>
+</header>
+
+<section>
+    <div class="content-container">
+
+        <div class="sub-section">
+            <h2 class="section-title">Core Courses</h2>
+            <ul>
+                <li><a href="https://github.com/your-username/repo-name">Software Development for Artificial Intelligence</a></li>
+                <li><a href="https://github.com/your-username/repo-name">Machine Learning</a></li>
+                <li><a href="https://github.com/your-username/repo-name">Introduction to Big Data and Data Science</a></li>
+                <li><a href="https://github.com/your-username/repo-name">Fundamentals of Artificial Intelligence</a></li>
+                <li><a href="https://github.com/your-username/repo-name">Deep Learning</a></li>
+                <li><a href="https://github.com/your-username/repo-name">Feature Engineering</a></li>
+            </ul>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Elective Courses</h2>
+            <ul>
+                <li><a href="https://github.com/your-username/repo-name">Scientific Data Visualization</a></li>
+                <li><a href="https://github.com/your-username/repo-name">Fundamentals of Database Systems</a></li>
+                <li><a href="https://github.com/your-username/repo-name">Natural Language Processing</a></li>
+                <li><a href="https://github.com/your-username/repo-name">Methods in Empirical Analysis</a></li>
+                <li><a href="https://github.com/your-username/repo-name">Information Retrieval and Web Search</a></li>
+            </ul>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Skillset</h2>
+            <ul>
+                <li>Python Programming</li>
+                <li>SQL</li>
+                <li>MATLAB</li>
+                <li>Tensorflow, Keras, and PyTorch</li>
+                <li>Machine Learning Algorithms</li>
+                <li>Neural Networks</li>
+                <li>Natural Language Processing</li>
+                <li>Tableau</li>
+                <li>Power BI</li>
+            </ul>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project-card">
+                <h3>Leveraging Deep Learning Models for Bird Species Classification | Deep Learning | Fall 2023</h3>
+                <p>Focusing on Convolutional Neural Network (CNN), ResNet, DenseNet, and Vision Transformer (ViT) models involving training on feature-augmented image data to capture complex visual characteristics. This was implemented using Python programming language on Google Colab.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Generating Synthetic Faces using Generative Adversarial Networks | Machine Learning | Spring 2023</h3>
+                <p>Developed a generative model using pre-trained models capable of producing realistic, high-quality synthetic faces indistinguishable from real faces. This was implemented using Python programming language on Google Colab.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Pneumonia Detection using Convolutional Neural Network | Software Development for Artificial Intelligence | Spring 2023</h3>
+                <p>Trained and improved the ability of a Convolutional Neural Network to identify if a patient has pneumonia using X-ray images. Created a local website to display the prediction when a new X-ray image is uploaded. Training of the model was done using Python programming language and deployment of the model to a local webpage was done using Streamlit.</p>
+            </div>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">On-Campus Student Employement</h2>
+            <p><strong> University of North Texas Libraries – Digital Imaging Student Assistant</strong> <br><br>
+            February 2023 - December 2024</p>
+            <ul>
+                <li>Captured metadata for 100+ historical letters.</li>
+                <li>Digitized 20+ archival books and ledgers with perfection.</li>
+            </ul>
+        </div>
+        
+        <section class="contact" id="contact" style=" padding: 0px 0; text-align: center;">
+            <h2 style="color: white; margin-bottom: 20px;">Connect with Me!</h2>
+            <div style="display: flex; justify-content: center; gap: 60px; align-items: center;">
+                <!-- Gmail -->
+                <a href="mailto:keerthi16101996@gmail.com" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/gmail.png" alt="Gmail" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">Gmail</p>
+                    </div>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/github.png" alt="GitHub" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">GitHub</p>
+                    </div>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/in/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/linkedin.png" alt="LinkedIn" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">LinkedIn</p>
+                    </div>
+                </a>
+            </div>
+            <p style = "color: rgb(160, 155, 155);">&copy; Lakshmi Keerthi Gopireddy</p>
+        </section>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-buttons">
+        <button class="footer-button" onclick="window.history.back();">Back</button>
+        <button class="footer-button" onclick="window.location.href='index.html';">Home</button>
+        <button class="footer-button" onclick="window.location.href='amazon.html';">Next</button>
+    </div>
+</footer>
+
+</body>
+</html>

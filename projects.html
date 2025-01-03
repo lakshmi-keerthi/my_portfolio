@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(90deg, black, grey);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, black, grey);
+            color: #bccbd9;
+            padding: 70px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.0em;
+            margin-top: 10px;
+            font-weight: 200;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            color: black;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #000000;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .sub-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #bccbd9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .sub-section:hover {
+            transform: translateY(-5px);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 8px 0;
+            font-size: 1.0em;
+            cursor: pointer;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "•";
+            color: #0e0e0f;
+            margin-right: 10px;
+        }
+
+        ul a{
+            content: "•";
+            color: #0e0e0f;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        ul a:hover {
+            text-decoration: underline;
+         }
+        footer {
+            background: linear-gradient(90deg, black, grey);
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 600px;
+        }
+
+        .footer-button {
+            background-color: #bccbd9;
+            color: rgb(12, 12, 12);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-button:hover {
+            background-color: #bccbd9;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 100;
+        }
+
+        .cta-button {
+            background-color: #bccbd9;
+            color: #0c0d0e;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 1.0em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #4c92d2;
+        }
+
+        .project-card {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e6f0ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact a:hover {
+            transform: translateY(-5px);
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Projects</h1>
+</header>
+
+<section>
+    <div class="content-container">
+
+        <div class="sub-section">
+            <h2 class="section-title">During Graduation</h2>
+
+            <div class="project-card">
+                <h3>Leveraging Deep Learning Models for Bird Species Classification | Deep Learning | Fall 2023</h3>
+                <p>Focusing on Convolutional Neural Network (CNN), ResNet, DenseNet, and Vision Transformer (ViT) models involving training on feature-augmented image data to capture complex visual characteristics. This was implemented using Python programming language on Google Colab.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Generating Synthetic Faces using Generative Adversarial Networks | Machine Learning | Spring 2023</h3>
+                <p>Developed a generative model using pre-trained models capable of producing realistic, high-quality synthetic faces indistinguishable from real faces. This was implemented using Python programming language on Google Colab.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Pneumonia Detection using Convolutional Neural Network | Software Development for Artificial Intelligence | Spring 2023</h3>
+                <p>Trained and improved the ability of a Convolutional Neural Network to identify if a patient has pneumonia using X-ray images. Created a local website to display the prediction when a new X-ray image is uploaded. Training of the model was done using Python programming language and deployment of the model to a local webpage was done using Streamlit.</p>
+            </div>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">During Advanced AI/ML Course</h2>
+    
+            <div class="project-card">
+                <h3>Literacy Rate Prediction | Colab using Python | Jan 2020</h3>
+                <p><strong>Objective:</strong> The goal of this Mini-Hackathon was to predict whether the literacy rate was high/ medium/ low in the different districts of India.</p>
+                <p><strong>Approach:</strong> Extensive data-pre-processing was required to clean the data, remove missing data and values, transform the data by normalization, select uncorrelated features and integrate the data into a single dataframe. After the data was pre-processed, a machine learning classifier was trained to obtain a model that could accurately predict the literacy rate (high/ medium/ low). </p>
+            </div>
+    
+            <div class="project-card">
+                <h3>Author Identification | Colab using Python | Feb 2020</h3>
+                <p><strong>Objective:</strong> The goal of this Mini-Hackathon was to identify the unique writing styles of different authors using a machine learning based approach.</p>
+                <p><strong>Approach:</strong> A manual, stylometric analysis using hand-crafted features was also used for comparison. A machine learning model was trained on textual data with corresponding author. Bag of Words and Word2Vec based approaches were used for feature representation and analysis.</p>
+            </div>
+    
+            <div class="project-card">
+                <h3>Classification of Fashion Clothing | Colab using Python | Feb 2020</h3>
+                <p><strong>Objective:</strong> The goal of this Mini-Hackathon was to classify fashion clothing by building a machine learning model and improving its performance in recognizing fashion clothing images.  </p>
+                <p><strong>Approach:</strong> Firstly, features were extracted from the raw images or PCA applied images. A multi-layer perceptron was trained on the features and model performance was evaluated. The model performance was improved using different hyperparameter values </p>
+            </div>
+    
+            <div class="project-card">
+                <h3>Retail Sales Forecasting | Kaggle using Python | Mar 2020</h3>
+                <p><strong>Objective: </strong>The goal of this Mini-Hackathon was to obtain the sales forecast for a big retail store. This was presented to us as a Kaggle competition. </p>
+                <p><strong>Approach: </strong>The data consisted of a real-world dataset that included the monthly sales. Extensive data-preprocessing was required to clean the data and integrate the data into a single data frame. We completed the competition successfully by building a time-series based machine learning model using linear regression that accurately forecasted the monthly and product wise sales for the retail store. </p>
+            </div>
+    
+            <div class="project-card">
+                <h3>Speech Classification | Colab using Python | Mar 2020</h3>
+                <p><strong>Objective:</strong> The objective of this Mini-Hackathon was to identify and classify simple vocal utterances such as yes or no. </p>
+                <p><strong>Approach:</strong> >2600 audio samples were used to extract useful feature representations in the form of Mel Frequency Cepstral Coefficients (MFCC). A machine learning classifier was trained on the MFCC features and the model was accurately able to classify the test audio samples as yes or no </p>
+            </div>
+    
+            <div class="project-card">
+                <h3>Voice-Based Food Ordering System | Colab using Python | Mar 2020</h3>
+                <p><strong>Objective:</strong> The goal of this hackathon was to create and deploy a food ordering application, using speech recognition AI techniques.  </p>
+                <p><strong>Approach:</strong> Training a model using features extracted from voice samples and to integrate a machine learning classifier that could identify the correct food items and servings. The final user interface accurately identified the food item from a voice command and confirmed the order as a response. </p>
+            </div>
+    
+            <div class="project-card">
+                <h3>Alexa Chatbot | Colab using Python | Apr 2020</h3>
+                <p><strong>Objective:</strong> The goal of this hackathon was to build a conversational bot to interact with the user and achieve the desired outcome</p>
+                <p><strong>Approach:</strong> Two approaches were used in achieving the task - (i) Amazon Alexa API based bot and (ii) Python coding-based bot. Python coding-based bot has to identify the statement given by the end-user and match the requirement with any previous training examples and give an output appropriately. </p>
+            </div>
+    
+            <div class="project-card">
+                <h3>Image Processing and Transformation | Colab using Python | Apr 2020</h3>
+                <p><strong>Objective:</strong> The objective of this Mini-Hackathon was to classify images of dogs and cats  </p>
+                <p><strong>Approach:</strong> A Pytorch framework was used to build and train a Convolutional Neural Network (CNN) model on a dataset of >22000 images of cats and dogs. Importantly, image classification was achieved with the CNN model and an accuracy of >90% was obtained.  </p>
+            </div>
+    
+            <div class="project-card">
+                <h3>Anti-Face Spoofing | Colab using Python | Apr 2020</h3>
+                <p><strong>Objective:</strong> In this Hackathon, we implemented AI based Face and Expression recognition to build an antiface spoofing application. The goal was to unlock a mobile application based on the accurate identification of a user’s face and expression, as a safety feature.   </p>
+                <p><strong>Approach:</strong> Firstly, a Siamese Network based representation was obtained from a large dataset of face images and used for detecting Face Similarity. Then we built a small dataset of our team members’ face images and expressions and applied a deep learning-based CNN model to perform Face and Expression Recognition. It was an amazing experience to unlock the mobile app with our Face and Expression Recognition model, at the end of the project and course. </p>
+            </div>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">During Undergraduation</h2>
+
+            <div class="project-card">
+                <h3>GPS Distance Meter using Arduino</h3>
+                <p>Description: A project based on GPS and Arduino to measure the distance between two points using the Haversine formula, which calculates the distance between two points on a sphere from their longitudes and latitudes. This uses a GPS system and keeps a record of the latitude and logitude of the starting point and tracks them till the end button is clicked. The latitude and logitude os the start and end points are then given to the arduino as input. Using these values, arduino calculates the distance between them and displays it using an digital display. This was further improvised to calculate distance instead of displacement.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Mini CNC using Arduino</h3>
+                <p>Description: A project using Arduino and 3 Easy Drivers. It utilizes the INKSCAPE software to draw or write within a specified space, with movement managed by stepper motors. The inkscape takes the structure of we want to draw and creates a list of movements needed in length, width and height. These list of movements are the input to the arduino which further makes decisions on which easy drive to move. The end of the drive is a pen like structure which captures the image in a paper.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Elderly Care Monitor using IoT</h3>
+                <p>Description: A device using Raspberry Pi to monitor health status of senior citizens and alert emergency contacts in case of abnormalities. We continuously track the heart rate, temperature, O2 level etc. using sensors and refresh the information for every 10 seconds. If any of these values are below the desired values, then this device initiates a alarm. This alarm sends a text message to the emergency contacts and alerts the surroundings.</p>
+            </div>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Professional Projects</h2>
+        
+            <div class="project-card">
+                <h3>TRON</h3>
+                <p>A model which is used to predict which bin a particular product is stowed into in a pod using videos at the Amazon Fulfillment Centre.</p>
+            </div>
+        
+            <div class="project-card">
+                <h3>Proximity</h3>
+                <p>A model which is used to identify human bodies in images and determine if the social distancing principles were followed at the Amazon Fulfillment Centres.</p>
+            </div>
+        
+            <div class="project-card">
+                <h3>Robin - Damage Inquiry</h3>
+                <p>A model used to classify whether a package in an image is damaged or not and the type of damage.</p>
+            </div>
+        
+            <div class="project-card">
+                <h3>Photo Validation Process</h3>
+                <p>A model used to check the compliance and safety of the pods and trays in the trucks using the images.</p>
+            </div>
+        
+            <div class="project-card">
+                <h3>Package Zero</h3>
+                <p>A model which checks whether a product is within or outside the package using images.</p>
+            </div>
+        
+            <div class="project-card">
+                <h3>Canvas</h3>
+                <p>A model used to identify movable objects in an image which is used by small size robots for moving directions.</p>
+            </div>
+        
+            <div class="project-card">
+                <h3>SPA - FRB</h3>
+                <p>A model used to classify whether a robotic arm is able to pick and place an item correctly using video based data.</p>
+            </div>
+        
+            <div class="project-card">
+                <h3>Huawei Technologies</h3>
+                <p>Optimizing a deep learning model for Cost Per Click/Impression Prediction.</p>
+            </div>
+        
+            <div class="project-card">
+                <h3>Citi Bank</h3>
+                <p>Automated preprocessing workflows in Dataiku, reducing data preparation time and improving data quality.</p>
+            </div>
+        </div>
+                
+        <section class="contact" id="contact" style=" padding: 0px 0; text-align: center;">
+            <h2 style="color: white; margin-bottom: 20px;">Connect with Me!</h2>
+            <div style="display: flex; justify-content: center; gap: 60px; align-items: center;">
+                <!-- Gmail -->
+                <a href="mailto:keerthi16101996@gmail.com" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/gmail.png" alt="Gmail" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">Gmail</p>
+                    </div>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/github.png" alt="GitHub" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">GitHub</p>
+                    </div>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/in/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/linkedin.png" alt="LinkedIn" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">LinkedIn</p>
+                    </div>
+                </a>
+            </div>
+            <p style = "color: rgb(160, 155, 155);">&copy; Lakshmi Keerthi Gopireddy</p>
+        </section>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-buttons">
+        <button class="footer-button" onclick="window.history.back();">Back</button>
+        <button class="footer-button" onclick="window.location.href='index.html';">Home</button>
+        <button class="footer-button" onclick="window.location.href='certifications.html';">Next</button>
+    </div>
+</footer>
+
+</body>
+</html>

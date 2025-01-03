@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Achievements</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(90deg, black, grey);
+            margin: 0;
+            padding: 0;
+            color: #bccbd9;
+        }
+
+        header {
+            background: linear-gradient(90deg, black, grey);
+            color: #bccbd9;
+            padding: 70px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #2c2f33;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .achievement-list {
+            list-style-type: none;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        .achievement-list li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            padding: 10px;
+            background: #444;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .achievement-list li:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact a:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: linear-gradient(90deg, black, grey);
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 600px;
+        }
+
+        .footer-button {
+            background-color: #bccbd9;
+            color: rgb(12, 12, 12);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-button:hover {
+            background-color: #bccbd9;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Achievements</h1>
+</header>
+
+<section>
+    <div class="content-container">
+        <ul class="achievement-list">
+            <li>Recognized as <strong>Outstanding Contributor</strong> in February 2022 by the client (Huawei)</li>
+            <li>Recognized as <strong>Champion IDS Research Analyst </strong>(Q2 2020)</li>
+            <li>Recognized as <strong>Champion Auditor - Silver </strong>(Q3 2020)</li>
+            <li>Recognized as <strong>Champion Auditor - Gold </strong>(Q1 2021)</li>
+            <li>Recognized as <strong>Most Valuable Player </strong>(2020)</li>
+            <li>Merit Certificate with Excellent Grade in <strong>Advanced Certification Program in Artificial Intelligence and Machine Learning</strong></li>
+            <li>Awarded Certificate of Merit for completing a 3-credit <strong>Programming Course</strong> with excellent performance at NIIT</li>
+        </ul>
+    </div>
+</section>
+
+<section class="contact" id="contact" style=" padding: 0px 0; text-align: center;">
+    <h2 style="color: white; margin-bottom: 20px;">Connect with Me!</h2>
+    <div style="display: flex; justify-content: center; gap: 60px; align-items: center;">
+        <!-- Gmail -->
+        <a href="mailto:keerthi16101996@gmail.com" style="text-decoration: none; color: inherit;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="images/gmail.png" alt="Gmail" style="width: 60px; height: 60px;">
+                <p style="margin-top: 10px; color: white;">Gmail</p>
+            </div>
+        </a>
+        
+        <!-- GitHub -->
+        <a href="https://github.com/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="images/github.png" alt="GitHub" style="width: 60px; height: 60px;">
+                <p style="margin-top: 10px; color: white;">GitHub</p>
+            </div>
+        </a>
+        
+        <!-- LinkedIn -->
+        <a href="http://www.linkedin.com/in/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="images/linkedin.png" alt="LinkedIn" style="width: 60px; height: 60px;">
+                <p style="margin-top: 10px; color: white;">LinkedIn</p>
+            </div>
+        </a>
+    </div>
+    <p style = "color: rgb(160, 155, 155);">&copy; Lakshmi Keerthi Gopireddy</p>
+    <br>
+    <br>
+    <br>
+</section>
+
+<footer>
+<div class="footer-buttons">
+    <button class="footer-button" onclick="window.history.back();">Back</button>
+    <button class="footer-button" onclick="window.location.href='index.html';">Home</button>
+</div>
+</footer>
+
+</body>
+</html>
+

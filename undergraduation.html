@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Undergraduate Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(90deg, black, grey);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, black, grey);
+            color: #bccbd9;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 0.7em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact a:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            color: black;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #000000;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .sub-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #bccbd9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .sub-section:hover {
+            transform: translateY(-5px);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 8px 0;
+            font-size: 1.0em;
+            cursor: pointer;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "•";
+            color: #0e0e0f;
+            margin-right: 10px;
+        }
+
+        .description {
+            display: none;
+            font-size: 0.7em;
+            padding: 10px;
+            margin-top: 5px;
+            margin-left: 50px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #bccbd9;
+            position: left;
+            left: 100%;
+            top: 0;
+            width: 550px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        ul li:hover .description {
+            display: block;
+        }
+
+        .contact a:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: linear-gradient(90deg, black, grey);
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 600px;
+        }
+
+        .footer-button {
+            background-color: #bccbd9;
+            color: rgb(12, 12, 12);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-button:hover {
+            background-color: #bccbd9;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 100;
+        }
+
+        .cta-button {
+            background-color: #bccbd9;
+            color: #0c0d0e;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 1.0em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #4c92d2;
+        }
+
+        .project-card {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e6f0ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Undergraduate Portfolio</h1>
+    <h3>Bachelor of Technology in Electronics and Telematics</h3>
+</header>
+
+<section>
+    <div class="content-container">
+        
+        <div class="sub-section">
+            <h2 class="section-title">Electronics and Telematics?</h2>
+            <p> It is a parallel branch to electronics and communication but focusing more on telecommunication and informatics.</p>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Skillset</h2>
+            <h3>Programming Skills:</h3>
+            <ul>
+                <li>C</li>
+                <li>Data Structures</li>
+            </ul>
+
+            <h3>Software/Platforms:</h3>
+            <ul>
+                <li>
+                    MATLAB
+                    <div class="description">
+                        Matrix Laboratory, a numerical computing environment for matrix manipulations, plotting, etc.
+                    </div>
+                </li>
+                <li>
+                    Multisim
+                    <div class="description">
+                        Electronic schematic capture and simulation program for circuit design.
+                    </div>
+                </li>
+                <li>
+                    Proteus
+                    <div class="description">
+                        Application for schematic capture and layout design of circuit boards.
+                    </div>
+                </li>
+                <li>
+                    MS Office
+                    <div class="description">
+                        Expertise in Microsoft Word, Excel, PowerPoint.
+                    </div>
+                </li>
+                <li>
+                    Arduino
+                    <div class="description">
+                        Open-source platform for creating interactive electronic objects.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Internship</h2>
+            <p>Attended the Inplant training at <strong>Central Institute of Tool Design</strong> (CITD) along with a course on MATLAB-ARDUINO for 30 days. Worked on a project to create a Mini Computer Numerical Control using Arduino.</p>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Projects Undertaken</h2>
+
+            <div class="project-card">
+                <h3>Project 1: GPS Distance Meter using Arduino</h3>
+                <p>Description: A project based on GPS and Arduino to measure the distance between two points using the Haversine formula, which calculates the distance between two points on a sphere from their longitudes and latitudes. This uses a GPS system and keeps a record of the latitude and logitude of the starting point and tracks them till the end button is clicked. The latitude and logitude os the start and end points are then given to the arduino as input. Using these values, arduino calculates the distance between them and displays it using an digital display. This was further improvised to calculate distance instead of displacement.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 2: Mini CNC using Arduino</h3>
+                <p>Description: A project using Arduino and 3 Easy Drivers. It utilizes the INKSCAPE software to draw or write within a specified space, with movement managed by stepper motors. The inkscape takes the structure of we want to draw and creates a list of movements needed in length, width and height. These list of movements are the input to the arduino which further makes decisions on which easy drive to move. The end of the drive is a pen like structure which captures the image in a paper.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 3: Elderly Care Monitor using IoT</h3>
+                <p>Description: A device using Raspberry Pi to monitor health status of senior citizens and alert emergency contacts in case of abnormalities. We continuously track the heart rate, temperature, O2 level etc. using sensors and refresh the information for every 10 seconds. If any of these values are below the desired values, then this device initiates a alarm. This alarm sends a text message to the emergency contacts and alerts the surroundings.</p>
+            </div>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Achievements</h2>
+            <ul>
+                <li>Awarded Certificate of Merit for achieving <strong>GOLD MEDAL</strong> in an International Children’s Art Competition.</li>
+                <li>Awarded Certificate of Merit for completing a 3 credit programming course with excellent performance at NIIT.</li>
+                <li>Awarded a medal for achieving first position in <strong> drawing competition</strong> at school level.</li>
+            </ul>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Co-Curricular Activities</h2>
+            <ul>
+                <li>Completed a 3-credit course titled “Programming in C”.</li>
+                <li>Participated in <strong>‘Ethical Hacking’ </strong>workshop conducted by Techkriti, IIT Kanpur.</li>
+                <li>Participated in a One-Day Seminar on <strong>Capacity Building</strong> for International Women’s Day at college.</li>
+                <li>Participated in <strong>‘NSTSE 2008’</strong> conducted by Unified Council.</li>
+                <li>Participated in a 2-day workshop on <strong>“Basic Telecom Technology”</strong> by BSNL, Hyderabad during "Potenzia 2016".</li>
+            </ul>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Extra-Curricular Activities</h2>
+            <ul>
+                <li>Participated in <strong>‘CHIGURU 2016’ </strong> for Youth for Seva, Hyderabad.</li>
+                <li>Participated in <strong>200m and 400m running races</strong> at the school level and won second position.</li>
+                <li>Volunteered with <strong>Street Cause</strong>, an NGO working for the needy, for 9 months in 2015.</li>
+            </ul>
+        </div>
+
+        <section class="contact" id="contact" style=" padding: 0px 0; text-align: center;">
+            <h2 style="color: white; margin-bottom: 20px;">Connect with Me!</h2>
+            <div style="display: flex; justify-content: center; gap: 60px; align-items: center;">
+                <!-- Gmail -->
+                <a href="mailto:keerthi16101996@gmail.com" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/gmail.png" alt="Gmail" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">Gmail</p>
+                    </div>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/github.png" alt="GitHub" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">GitHub</p>
+                    </div>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/in/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/linkedin.png" alt="LinkedIn" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">LinkedIn</p>
+                    </div>
+                </a>
+            </div>
+            <p style = "color: rgb(160, 155, 155);">&copy; Lakshmi Keerthi Gopireddy</p>
+        </section>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-buttons">
+        <button class="footer-button" onclick="window.history.back();">Back</button>
+        <button class="footer-button" onclick="window.location.href='index.html';">Home</button>
+        <button class="footer-button" onclick="window.location.href='graduation.html';">Next</button>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wipro Work Experience</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(90deg, black, grey);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, black, grey);
+            color: #bccbd9;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.0em;
+            margin-top: 10px;
+            font-weight: 200;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            color: black;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #000000;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .sub-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #bccbd9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .sub-section:hover {
+            transform: translateY(-5px);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin: 8px 0;
+            font-size: 1.0em;
+            position: relative;
+            padding-left: 20px;
+            text-indent: hanging;
+        }
+
+        ul li:before {
+            content: "•";
+            color: #0e0e0f;
+            position: absolute;
+            left: 0;
+        }
+        .description {
+            display: none;
+            font-size: 0.7em;
+            padding: 10px;
+            margin-top: 5px;
+            margin-left: 50px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #bccbd9;
+            position: left;
+            left: 100%;
+            top: 0;
+            width: 550px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        ul li:hover .description {
+            display: block;
+        }
+
+        footer {
+            background: linear-gradient(90deg, black, grey);
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 600px;
+        }
+
+        .footer-button {
+            background-color: #bccbd9;
+            color: rgb(12, 12, 12);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-button:hover {
+            background-color: #bccbd9;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 100;
+        }
+
+        .cta-button {
+            background-color: #bccbd9;
+            color: #0c0d0e;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 1.0em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #4c92d2;
+        }
+
+        .project-card {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e6f0ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact a:hover {
+            transform: translateY(-5px);
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Wipro Work Experience</h1>
+    <h3>Data Scientist</h3>
+    <p>August 2022 - December 2023</p>
+</header>
+
+<section>
+    <div class="content-container">
+        <div class="sub-section">
+            <h2 class="section-title">Professional Contributions</h2>
+            
+            <div class="project-card">
+                <h3>Highlights</h3>
+                <ul style="margin-left: 20px; color: #333;">
+                    <li>Performed feature selection on 150+ features using XGBoost and Cancelout, increasing the true positives by ~4%.</li>
+                    <li>Automated capturing logs from Huawei MLOps platform.</li>
+                    <li>Implemented early stop on Deep and Cross Network-based models, increasing the true positives by ~6%.</li>
+                    <li>Automated data preprocessing using Dataiku for Citibank, reducing the load by ~45%.</li>
+                </ul>
+            </div>
+            
+            <div class="project-card">
+                <h3>Responsibilities</h3>
+                <ul style="margin-left: 20px; color: #333;">
+                    <li>Identified the importance of 150+ features using manual and ensemble-based feature selection methods for Huawei Client.</li>
+                    <li>Implemented early stop and performed hyper-parameter tuning manually for advertisement types, observing significant improvement on real-time data for Huawei Client.</li>
+                    <li>Played a major role in automating KPI capture from logs, addition/removal of features using Python scripts for Huawei Client.</li>
+                    <li>Performed data cleaning and preprocessing of customer and beneficiary databases using the Dataiku platform for Citi Bank Client.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Client Journey</h2>
+            <ul style="margin-left: 20px; color: #333; position: relative;">
+                <li style="position: relative;">
+                    Huawei Technologies
+                    <div class="description">
+                        Optimizing a deep leanring model for Cost Per Click/Impression Prediction
+                    </div>
+                </li>
+                <li style="position: relative;">
+                    Citi Bank
+                    <div class="description">
+                        Automated preprocessing workflows in Dataiku, reducing data preparation time and improving data quality.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub-section">
+            <h2 class="section-title">Certifications and Accreditations</h2>
+            <ul style="margin-left: 20px; color: #333;">
+                <li>Recognized as ‘Outstanding Contributor’ in February 2022 by the client (Huawei).</li>
+                <li>Completed RapidMiner Machine Learning Professional Certification.</li>
+                <li>Completed RapidMiner Machine Learning Master Certification.</li>
+                <li>Completed ML Practitioner Certification by Dataiku.</li>
+                <li>Completed Core Designer Certification by Dataiku.</li>
+                <li>Completed Advanced Designer Certification by Dataiku.</li>
+            </ul>
+        </div>
+
+        <section class="contact" id="contact" style=" padding: 0px 0; text-align: center;">
+            <h2 style="color: white; margin-bottom: 20px;">Connect with Me!</h2>
+            <div style="display: flex; justify-content: center; gap: 60px; align-items: center;">
+                <!-- Gmail -->
+                <a href="mailto:keerthi16101996@gmail.com" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/gmail.png" alt="Gmail" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">Gmail</p>
+                    </div>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/github.png" alt="GitHub" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">GitHub</p>
+                    </div>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/in/lakshmi-keerthi" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="images/linkedin.png" alt="LinkedIn" style="width: 60px; height: 60px;">
+                        <p style="margin-top: 10px; color: white;">LinkedIn</p>
+                    </div>
+                </a>
+            </div>
+            <p style = "color: rgb(160, 155, 155);">&copy; Lakshmi Keerthi Gopireddy</p>
+        </section>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-buttons">
+        <button class="footer-button" onclick="window.history.back();">Back</button>
+        <button class="footer-button" onclick="window.location.href='index.html';">Home</button>
+        <button class="footer-button" onclick="window.location.href='skillset.html';">Next</button>
+    </div>
+</footer>
+
+</body>
+</html>
